@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700|Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0 auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+h1, h2 {
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+header {
+  margin-bottom: 1rem;
+  padding: 3rem;
+  background: #eee;
+}
+
+header > p {
+  font-size: 28px;
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  header > p {
+    font-size: 20px;
+  }
+}
+
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section{
+  margin-bottom: 4rem;
+}
+
+.major-step-bullet {
+  margin-bottom: 2rem;
+}

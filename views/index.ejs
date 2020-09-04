@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Meet Bizbot</title>
+
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <p>&ldquo;<%= idea%>&rdquo;</p>
+    </header>
+    <main>
+      <section>
+        <h1>Meet Bizbot</h1>
+        <p>Bizbot is a Discord bot that has lots of ideas for your next startup!</p>
+      </section>
+      <section>
+        <h2>Prereqs</h2>
+        <p>Bizbot is remixed from the <a href="https://starter-discord.glitch.me/install">Discord Starter</a>. It uses Google Sheets as a database. That code came from: <a href="https://glitch.com/edit/#!/google-sheet-json-api">Google Sheet JSON API</a>. To get started, you'll need:</p>
+        <ul>
+          <li>A <a href="https://discordapp.com/developers/applications">Discord Developer</a> token</li>
+          <li>Admin access to your Discord server</li>
+          <li>A Google Sheet that's been <a href="https://www.npmjs.com/package/google-spreadsheet">published to the web.</a> (Note: <em>Published to the web</em> is different that <em>publically viewable</em>.)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Installation</h2>
+        <ol>
+          <li class="major-step-bullet"><strong>Remix this app! </strong><br>
+            <a href="https://glitch.com/edit/#!/remix/starter-discord"
+                ><img
+                  src="https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg"
+                  alt="Remix on Glitch"
+              /></a>
+          </li>
+          <li class="major-step-bullet"><strong>Add your keys.</strong>
+            <ol>
+              <li>Open the source code, and naviagte to the .env file.</li>
+              <li>Paste your tokens, and the spreadsheet URL on their respective line.</li>
+            </ol>
+          </li>
+          <li class="major-step-bullet">
+            <strong>Add your bot to your Discord server</strong>
+            <ol>
+              <li>Go back to the <a href="https://discordapp.com/developers/applications/">Discord Developer dashboard</a></li>
+              <li>Click on your bot.</li>
+              <li>On the left hand panel select "Oath2"</li>
+              <li>Scroll down to the section called "Scopes". Select "bot"</li>
+              <li>Open the URL at the bottom of the box in your browser.</li>
+              <li>Choose your server and click authorize</li>
+              <li>Go back to your Discord server and see if your bot is there!</li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+       <section>
+        <h2>Usage</h2>
+        <p><strong>@bizbot new-startup</strong> tells you Bizbot's idea for a new company.</p>
+        <p><strong>@bizbot all-ideas</strong> tells you all your ideas stored in a Google Sheet.</p>
+        <p><strong>@bizbot strategy</strong> tells you a Oblique Strategy to help you come up with a new idea.</p>
+      </section>
+      
+      <section>
+        <h2>Credits</h2>
+        <ul>
+          <li>Remixed from the <a href="https://starter-discord.glitch.me/">Discord Starter</a>.</li>
+          <li>Used the <a href="https://glitch.com/edit/#!/google-sheet-json-api">Google Sheet JSON API</a> as a basis for pulling Sheets data.</li>
+          <li>Using <a href="https://github.com/ceejbot/oblique-strategies">Oblique Strategies</a> originally written by Brian Eno and Peter Schmidt.</li>
+        </ul>
+      </section>
+      <!-- include the Glitch button to show what the webpage is about and
+            to make it easier for folks to view source and remix -->
+      <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+      <script src="https://button.glitch.me/button.js"></script>
+    </main>
+  </body>
+</html>
